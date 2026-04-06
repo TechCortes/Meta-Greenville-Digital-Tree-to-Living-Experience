@@ -1,1 +1,1 @@
-{\n  \"$schema\": \"https://openapi.vercel.sh/vercel.json\",\n  \"buildCommand\": \"npm run build\",\n  \"installCommand\": \"npm install\",\n  \"outputDirectory\": \"dist\",\n  \"rewrites\": [\n    { \"source\": \"/(.*)\", \"destination\": \"/index.html\" }\n  ]\n}\n
+{}
