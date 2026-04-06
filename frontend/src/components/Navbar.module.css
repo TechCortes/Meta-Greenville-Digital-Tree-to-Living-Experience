@@ -1,48 +1,55 @@
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2.5rem;
-  background: rgba(10, 10, 15, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 3rem;
+  background: rgba(247, 246, 242, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(198, 169, 107, 0.18);
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: 0.02em;
 }
-
-.logoAccent { color: var(--color-accent); }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
 }
 
 .links a {
-  color: var(--color-text-muted);
+  color: var(--text-muted);
   transition: color 0.2s;
 }
 
-.links a:hover { color: var(--color-text); }
+.links a:hover { color: var(--green); }
 
 .cta {
-  background: var(--color-accent);
-  color: var(--color-text) !important;
+  color: var(--green) !important;
+  border: 1px solid var(--gold);
   padding: 0.5rem 1.25rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.2s !important;
+  border-radius: 100px;
+  transition: background 0.2s !important, color 0.2s !important;
 }
 
-.cta:hover { background: var(--color-accent-hover) !important; }
+.cta:hover {
+  background: var(--gold) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
+  .links { gap: 1rem; }
+}

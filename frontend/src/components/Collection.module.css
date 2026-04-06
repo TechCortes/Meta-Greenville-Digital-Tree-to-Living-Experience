@@ -1,0 +1,82 @@
+.section { background: var(--bg); padding: 8rem 3rem; }
+
+.title { text-align: center; margin-bottom: 3.5rem; }
+
+.label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--green);
+  margin-bottom: 0.75rem;
+}
+
+.sub { font-size: 0.95rem; color: var(--text-muted); }
+
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(198,169,107,0.15);
+  background: #fff;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(198,169,107,0.5);
+  box-shadow: 0 16px 40px rgba(198,169,107,0.12);
+}
+
+.thumb {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tree {
+  font-size: 4rem;
+  filter: drop-shadow(0 0 18px rgba(255,110,180,0.65));
+}
+
+.info {
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nftId { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); }
+.rarity { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.05em; }
+
+.cta { text-align: center; margin-top: 3rem; }
+
+.btn {
+  background: var(--green);
+  color: var(--text-light);
+  padding: 0.9rem 2.5rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn:hover { background: var(--green-light); transform: translateY(-2px); }
+
+@media (max-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }

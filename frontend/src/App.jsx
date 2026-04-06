@@ -1,7 +1,14 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
-import Trending from './components/Trending'
+import Vision from './components/Vision'
+import NFTUtility from './components/NFTUtility'
+import Experience from './components/Experience'
+import Ecosystem from './components/Ecosystem'
+import Community from './components/Community'
+import WhyNow from './components/WhyNow'
+import Collection from './components/Collection'
+import EmailCapture from './components/EmailCapture'
+import About from './components/About'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -10,8 +17,15 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <Trending />
+        <Vision />
+        <NFTUtility />
+        <Experience />
+        <Ecosystem />
+        <Community />
+        <WhyNow />
+        <Collection />
+        <EmailCapture />
+        <About />
       </main>
       <Footer />
     </>
