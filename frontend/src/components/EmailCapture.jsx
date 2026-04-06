@@ -16,10 +16,7 @@ export default function EmailCapture() {
       <div className={styles.box}>
         <span className={styles.label}>Stay Connected</span>
         <h2 className={styles.heading}>Your Journey Starts Here</h2>
-        <p className={styles.sub}>
-          Be the first to receive event invitations, retreat announcements,
-          new program launches, and NFT holder benefits.
-        </p>
+        <p className={styles.sub}>Be the first to receive event invitations, retreat announcements, new program launches, and NFT holder benefits.</p>
         {done ? (
           <p className={styles.thanks}>Welcome, {name}. You're now part of Meta Greenville. ✨</p>
         ) : (

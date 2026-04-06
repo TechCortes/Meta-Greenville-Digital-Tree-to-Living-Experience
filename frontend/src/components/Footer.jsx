@@ -28,9 +28,7 @@ export default function Footer() {
       <div className={styles.finalCta}>
         <h2 className={styles.ctaHeadline}>Your Journey Starts Here</h2>
         <div className={styles.ctaButtons}>
-          <a href={MARKETPLACE} target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
-            View NFT Collection
-          </a>
+          <a href={MARKETPLACE} target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>View NFT Collection</a>
           <a href="#email" className={styles.btnSecondary}>Join Community</a>
           <a href="#community" className={styles.btnGhost}>Attend an Event</a>
         </div>

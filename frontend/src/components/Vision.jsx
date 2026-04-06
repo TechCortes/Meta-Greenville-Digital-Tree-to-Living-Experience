@@ -15,9 +15,7 @@ export default function Vision() {
       <div ref={ref} className={`${styles.inner} reveal`}>
         <div className={styles.text}>
           <span className={styles.label}>The Vision</span>
-          <h2 className={styles.heading}>
-            A New Paradigm<br /><em>for Living</em>
-          </h2>
+          <h2 className={styles.heading}>A New Paradigm<br /><em>for Living</em></h2>
           <p className={styles.body}>
             Meta Greenville is a vision to create a sanctuary where nature reconnects
             us to clarity, community accelerates growth, and consciousness drives creation.

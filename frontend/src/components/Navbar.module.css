@@ -28,11 +28,7 @@
   letter-spacing: 0.03em;
 }
 
-.links a {
-  color: var(--text-muted);
-  transition: color 0.2s;
-}
-
+.links a { color: var(--text-muted); transition: color 0.2s; }
 .links a:hover { color: var(--green); }
 
 .cta {
@@ -42,11 +38,7 @@
   border-radius: 100px;
   transition: background 0.2s !important, color 0.2s !important;
 }
-
-.cta:hover {
-  background: var(--gold) !important;
-  color: #fff !important;
-}
+.cta:hover { background: var(--gold) !important; color: #fff !important; }
 
 @media (max-width: 768px) {
   .nav { padding: 1rem 1.5rem; }

@@ -19,10 +19,7 @@ export default function NFTUtility() {
       <div ref={titleRef} className={`${styles.title} reveal`}>
         <span className={styles.label}>NFT Utility</span>
         <h2 className={styles.heading}>Your NFT is a Gateway</h2>
-        <p className={styles.sub}>
-          Each Meta Greenville NFT is more than art — it is your access point
-          into a living, breathing ecosystem.
-        </p>
+        <p className={styles.sub}>Each Meta Greenville NFT is more than art — it is your access point into a living, breathing ecosystem.</p>
       </div>
       <div ref={cardsRef} className={`${styles.cards} reveal`}>
         {utilities.map((u) => (
@@ -34,9 +31,7 @@ export default function NFTUtility() {
         ))}
       </div>
       <div className={styles.cta}>
-        <a href={MARKETPLACE} target="_blank" rel="noopener noreferrer" className={styles.btn}>
-          Explore the Collection
-        </a>
+        <a href={MARKETPLACE} target="_blank" rel="noopener noreferrer" className={styles.btn}>Explore the Collection</a>
       </div>
     </section>
   )
