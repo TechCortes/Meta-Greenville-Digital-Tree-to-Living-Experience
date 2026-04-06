@@ -1,12 +1,20 @@
 import styles from './Community.module.css'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-const audience = ['Entrepreneurs & Founders','Angel Investors, VCs & Family Offices','Wellness Practitioners','Thought Leaders in Health & Wealth']
-const events = [
-  { icon:'🏙️', type:'NYC In-Person Salons', desc:'Intimate gatherings with curated, high-signal conversations.' },
-  { icon:'💻', type:'Virtual Workshops', desc:'Online sessions open to the global conscious community.' },
-  { icon:'🌿', type:'Retreats on the Land', desc:'Immersive multi-day experiences in Greenville, NY.' },
-  { icon:'🎙️', type:'Guest Speaker Series', desc:'Health, wealth, and consciousness thought leaders.' },
+
+const audience = [
+  'Entrepreneurs & Founders',
+  'Angel Investors, VCs & Family Offices',
+  'Wellness Practitioners',
+  'Thought Leaders in Health & Wealth',
 ]
+
+const events = [
+  { type: 'NYC In-Person Salons', desc: 'Intimate gatherings with curated, high-signal conversations.' },
+  { type: 'Virtual Workshops', desc: 'Online sessions open to the global conscious community.' },
+  { type: 'Retreats on the Land', desc: 'Immersive multi-day experiences in Greenville, NY.' },
+  { type: 'Guest Speaker Series', desc: 'Health, wealth, and consciousness thought leaders.' },
+]
+
 export default function Community() {
   const ref = useScrollReveal()
   return (
@@ -23,9 +31,9 @@ export default function Community() {
           </div>
         </div>
         <div className={styles.right}>
-          {events.map((e) => (
+          {events.map((e, i) => (
             <div key={e.type} className={styles.card}>
-              <span className={styles.cardIcon}>{e.icon}</span>
+              <span className={styles.cardNum}>0{i + 1}</span>
               <div><h3>{e.type}</h3><p>{e.desc}</p></div>
             </div>
           ))}

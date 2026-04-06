@@ -1,13 +1,16 @@
 import styles from './NFTUtility.module.css'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-const M = 'https://collections.mashlabs.xyz/metagreenville/'
+
+const MARKETPLACE = 'https://collections.mashlabs.xyz/metagreenville/'
+
 const utilities = [
-  { icon:'🌳', title:'Access to the Land', desc:'Nature-based retreats in Greenville, NY. Walk the land. Connect with your tree.' },
-  { icon:'🧘', title:'Mindfulness Sessions', desc:'Meditation, breathwork, and energy awareness practices led by expert facilitators.' },
-  { icon:'🧠', title:'Founder Programs', desc:'PVS-inspired cohort sessions and self-discovery programs for conscious entrepreneurs.' },
-  { icon:'🤝', title:'Conscious Community', desc:'A curated network of entrepreneurs, investors, and wellness practitioners.' },
-  { icon:'🌍', title:'Exclusive Events', desc:'NYC salons, virtual workshops, and in-person retreats open to all NFT holders.' },
+  { num: '01', title: 'Access to the Land', desc: 'Nature-based retreats in Greenville, NY. Walk the land. Connect with your tree.' },
+  { num: '02', title: 'Mindfulness Sessions', desc: 'Meditation, breathwork, and energy awareness practices led by expert facilitators.' },
+  { num: '03', title: 'Founder Programs', desc: 'PVS-inspired cohort sessions and self-discovery programs for conscious entrepreneurs.' },
+  { num: '04', title: 'Conscious Community', desc: 'A curated network of entrepreneurs, investors, and wellness practitioners.' },
+  { num: '05', title: 'Exclusive Events', desc: 'NYC salons, virtual workshops, and in-person retreats open to all NFT holders.' },
 ]
+
 export default function NFTUtility() {
   const titleRef = useScrollReveal()
   const cardsRef = useScrollReveal()
@@ -21,12 +24,15 @@ export default function NFTUtility() {
       <div ref={cardsRef} className={`${styles.cards} reveal`}>
         {utilities.map((u) => (
           <div key={u.title} className={styles.card}>
-            <span className={styles.cardIcon}>{u.icon}</span>
-            <h3>{u.title}</h3><p>{u.desc}</p>
+            <span className={styles.num}>{u.num}</span>
+            <h3>{u.title}</h3>
+            <p>{u.desc}</p>
           </div>
         ))}
       </div>
-      <div className={styles.cta}><a href={M} target="_blank" rel="noopener noreferrer" className={styles.btn}>Explore the Collection</a></div>
+      <div className={styles.cta}>
+        <a href={MARKETPLACE} target="_blank" rel="noopener noreferrer" className={styles.btn}>Explore the Collection</a>
+      </div>
     </section>
   )
 }
