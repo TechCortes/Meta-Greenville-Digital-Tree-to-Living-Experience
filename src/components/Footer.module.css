@@ -1,0 +1,20 @@
+.footer { background:var(--dark-2); color:var(--text-light); padding:5rem 3rem 2rem; }
+.top { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; padding-bottom:3rem; border-bottom:1px solid rgba(255,255,255,0.07); margin-bottom:5rem; }
+.logo { font-family:var(--font-serif); font-size:1.25rem; display:block; margin-bottom:0.75rem; }
+.brand p { font-size:0.85rem; color:rgba(247,246,242,0.4); line-height:1.7; max-width:280px; }
+.links { display:flex; gap:4rem; }
+.group { display:flex; flex-direction:column; gap:0.65rem; }
+.groupLabel { font-size:0.68rem; font-weight:600; letter-spacing:0.13em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; }
+.group a { font-size:0.875rem; color:rgba(247,246,242,0.45); transition:color 0.2s; }
+.group a:hover { color:var(--text-light); }
+.finalCta { text-align:center; margin-bottom:5rem; }
+.ctaHeadline { font-family:var(--font-serif); font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:400; color:var(--text-light); margin-bottom:2rem; }
+.ctaButtons { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.btnPrimary { background:var(--gold); color:var(--dark); padding:0.8rem 2rem; border-radius:100px; font-size:0.875rem; font-weight:500; transition:background 0.2s; }
+.btnPrimary:hover { background:var(--gold-light); }
+.btnSecondary { border:1px solid rgba(247,246,242,0.3); color:var(--text-light); padding:0.8rem 2rem; border-radius:100px; font-size:0.875rem; transition:border-color 0.2s,color 0.2s; }
+.btnSecondary:hover { border-color:var(--gold); color:var(--gold); }
+.btnGhost { color:rgba(247,246,242,0.38); padding:0.8rem 1.5rem; font-size:0.875rem; transition:color 0.2s; }
+.btnGhost:hover { color:var(--gold); }
+.bottom { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; font-size:0.78rem; color:rgba(247,246,242,0.25); padding-top:2rem; border-top:1px solid rgba(255,255,255,0.05); }
+@media (max-width:768px) { .top { grid-template-columns:1fr; gap:2.5rem; } .links { flex-wrap:wrap; gap:2rem; } }
